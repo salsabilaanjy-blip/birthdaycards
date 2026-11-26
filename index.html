@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aisyah's Birthday Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="music" src="musik.mp3" loop></audio>
+
+<!-- COVER -->
+<div id="cover" class="cover">
+    <div class="cover-box">
+        <div class="cover-decoration">✧</div>
+        <p class="cover-subtitle">YOU ARE INVITED TO</p>
+
+        <h1>Aisyah's<br>Birthday</h1>
+
+        <div class="cover-date">10 March 2027</div>
+
+        <button id="openButton" class="open-button">
+            ♡ Buka Undangan ♡
+        </button>
+    </div>
+</div>
+
+<!-- ISI UNDANGAN -->
+<main id="content" class="hidden">
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">Birthday Celebration</p>
+
+            <h1>Aisyah's Birthday</h1>
+
+            <div class="hero-date">
+                10 March 2027 · 15.00 WIB
+            </div>
+
+            <p class="hero-message">
+                You're invited to celebrate<br>
+                this special day with me ♡
+            </p>
+
+            <div class="ornament">✧ ── ♡ ── ✧</div>
+        </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="countdown-section">
+        <p class="eyebrow">A special day is coming</p>
+        <h2>Counting the Days</h2>
+
+        <div class="countdown">
+            <div class="count-item">
+                <b id="days">0</b>
+                <span>Hari</span>
+            </div>
+
+            <div class="count-item">
+                <b id="hours">0</b>
+                <span>Jam</span>
+            </div>
+
+            <div class="count-item">
+                <b id="minutes">0</b>
+                <span>Menit</span>
+            </div>
+
+            <div class="count-item">
+                <b id="seconds">0</b>
+                <span>Detik</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAIL + GALERI -->
+    <section class="information-section">
+
+        <!-- DETAIL ACARA -->
+        <div class="info-card event-card">
+            <h2>Detail Acara</h2>
+
+            <div class="detail-item">
+                <div class="detail-icon">▦</div>
+                <div>
+                    <strong>Tanggal</strong>
+                    <p>Rabu, 10 Maret 2027</p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <div class="detail-icon">◷</div>
+                <div>
+                    <strong>Waktu</strong>
+                    <p>15.00 WIB – Selesai</p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <div class="detail-icon">⌖</div>
+                <div>
+                    <strong>Lokasi</strong>
+                    <p>Margajaya, Tangerang Selatan</p>
+                </div>
+            </div>
+
+            <a class="button maps-button"
+               href="https://www.google.com/maps/search/?api=1&query=Margajaya+Tangerang+Selatan"
+               target="_blank">
+                ⌖ Buka Google Maps
+            </a>
+        </div>
+
+        <!-- GALERI MOMEN -->
+        <div class="info-card gallery-card">
+
+            <h2>Galeri Momen</h2>
+            <p class="gallery-subtitle">Little things, lovely memories ♡</p>
+
+            <div class="gallery-grid">
+
+                <div class="gallery-photo">
+                    <img
+                        src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=700&q=85"
+                        alt="Dekorasi pesta ulang tahun"
+                    >
+                    <span>Celebration</span>
+                </div>
+
+                <div class="gallery-photo">
+                    <img
+                        src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=700&q=85"
+                        alt="Kue ulang tahun"
+                    >
+                    <span>Birthday Cake</span>
+                </div>
+
+                <div class="gallery-photo">
+                    <img
+                        src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=700&q=85"
+                        alt="Perayaan bersama"
+                    >
+                    <span>Happy Moments</span>
+                </div>
+
+            </div>
+
+            <p class="gallery-note">
+                A little celebration, a lot of memories.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- DIGITAL GIFT -->
+    <section class="gift-section">
+        <div class="gift-card">
+
+            <p class="eyebrow">A little kindness</p>
+            <h2>Digital Gift</h2>
+
+            <p class="gift-message">
+                Doa dan kehadiranmu adalah hadiah terindah ♡
+            </p>
+
+            <div class="bank-information">
+
+                <div class="bank-logo">
+                    <span class="bank-name">BCA</span>
+                </div>
+
+                <div class="bank-detail">
+                    <p>Nomor Rekening</p>
+                    <h3 id="rekeningNumber">1234567890</h3>
+                    <p>Atas Nama Aisyah</p>
+
+                    <button id="copyRekening" class="button">
+                        ▣ Salin Nomor Rekening
+                    </button>
+
+                    <p id="copyMessage" class="copy-message"></p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RSVP + GUESTBOOK -->
+    <section class="bottom-section">
+
+        <!-- RSVP -->
+        <div class="info-card rsvp-card">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p class="form-subtitle">Isi konfirmasi dan ucapanmu ♡</p>
+
+            <form id="rsvpForm">
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Nama lengkap"
+                    required
+                >
+
+                <input
+                    type="text"
+                    name="whatsapp"
+                    placeholder="Nomor WhatsApp"
+                    required
+                >
+
+                <select name="attendance" required>
+                    <option value="">Pilih kehadiran</option>
+                    <option value="Hadir">Hadir</option>
+                    <option value="Tidak Hadir">Tidak Hadir</option>
+                </select>
+
+                <textarea
+                    name="wish"
+                    placeholder="Ucapan dan doa..."
+                ></textarea>
+
+                <button id="submitButton" type="submit">
+                    ♡ Kirim Konfirmasi
+                </button>
+
+                <p id="responseMessage"></p>
+
+            </form>
+        </div>
+
+        <!-- GUEST BOOK -->
+        <div class="info-card guest-card">
+            <h2>Guest Book</h2>
+
+            <p>
+                Terima kasih sudah mengisi<br>
+                konfirmasi dan berbagi doa ♡
+            </p>
+
+            <a href="daftar-tamu.php" class="button guest-button">
+                ♧ Lihat Daftar Tamu
+            </a>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-ornament">✧ ───────── ♡ ───────── ✧</div>
+
+        <h2>See You There!</h2>
+
+        <p>With love, Aisyah ♡</p>
+
+        <span>Birthday Celebration · 2027</span>
+    </footer>
+
+</main>
+
+<!-- TOMBOL MUSIK -->
+<button id="musicButton" class="music-button hidden">
+    ♫ Musik
+</button>
+
+<p id="musicStatus" class="music-status"></p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
